@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunny Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="game-container">
+    <div class="game-board" id="game-board"></div>
+    <div class="game-stats">
+      <div class="score" id="score">Score: 0</div>
+      <div class="level" id="level">Level: 1</div>
+    </div>
+    <button class="restart-button" id="restart-button">Restart</button>
+  </div>
+
+  <button class="pause-button" id="pause-button">Pause</button>
+
+  <div class="high-scores">
+    <h3>High Scores</h3>
+    <ul id="high-scores-list"></ul>
+    <form id="high-score-form">
+      <input type="text" id="player-name" placeholder="Enter your name">
+      <button type="submit">Submit High Score</button>
+    </form>
+  </div>
+
+
+  <div class="level-menu" id="level-menu">
+    <h2>Select Level</h2>
+    <div class="level-buttons" id="level-buttons"></div>
+  </div>
+
+  <script src="https://cdn.socket.io/socket.io-4.0.1.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
